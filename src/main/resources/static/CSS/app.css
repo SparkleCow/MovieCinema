@@ -67,7 +67,7 @@ header {
 /*Estilos contenido principal */
 
 .contenido{
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(133, 131, 131);
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -81,7 +81,7 @@ header {
     height: 50%;
     justify-content:space-between;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
 }
 
 .pelicula{
@@ -90,11 +90,7 @@ header {
     justify-content: center;
 }
 
-/*.img_p{
-    height: 450px;
-    width: 300px;
-}
-*/
+
 .img_p{
     height: 450px;
     width: 300px;
@@ -107,31 +103,54 @@ header {
 }
 
 .headings{
-    font-family: "Cambria Bold", Arial, sans-serif;
+    font-family: "Kobenhavn CS Heavy", sans-serif;
     display: inline;
     margin-top: 30px;
+    font-size: 40px;
+    color: rgb(100, 0, 0);
 }
 
 /*Estilos de la respuesta JSON*/
 
 .respuesta_pelicula{
-    background-color: rgb(188, 185, 185);
+    background-color: rgb(133, 131, 131);
     width: 80%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 40px 0px;
+    margin: 40px;
 }
 
 .img_pelicula{
-    width: 50%;
+    width: 35%;
     height: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 30px;
 }
 
 .img_respuesta{
     height: 400px;
     width: 300px;
 }
+
+.titulo{
+    font-family: "Kobenhavn CS Heavy", sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    padding-bottom:10px ;
+}
+
+.info_pelicula{
+    font-family: "Kobenhavn CS Light", sans-serif;
+    padding-right: 40px;
+}
+
+.director{
+    color: rgb(100, 0, 0);
+    font-family: "Kobenhavn CS Heavy", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
