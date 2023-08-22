@@ -1,8 +1,3 @@
-# TALLER 1: APLICACIONES DISTRIBUIDAS (HTTP, SOCKETS, HTML, JS,MAVEN, GIT)
-
-**Estudiante:** Edwar Fabian Lozano Florez  
-**Clase:** AREP  
-**Profesor:** Luis Daniel Benavides
 
 ## Arquitectura
 La aplicación cuenta con una arquitectura monolítica lo que hace que tanto el front como el back se ejecuen en el mismo servidor
