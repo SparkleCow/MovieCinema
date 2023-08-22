@@ -1,5 +1,6 @@
 package Service.MovieService;
 
+import Service.ConnectionService.ConnectionMovies;
 import Service.ConnectionService.ConnectionService;
 
 import java.io.BufferedReader;
@@ -12,16 +13,16 @@ public class MovieServiceImp implements MovieService {
     public String findByName(String name){
         try {
             // URL de la API de peliculas omdbapi con su respectiva key.
-            connectionService = new ConnectionService("http://www.omdbapi.com/?apikey=", "12c40410", "&t=", name);
+            connectionService = new ConnectionMovies();
 
-            BufferedReader reader = new BufferedReader(new InputStreamReader(connectionService.createConecction().getInputStream()));
+            BufferedReader reader = new BufferedReader(new InputStreamReader(connectionService.createConnectionResponse(name).getInputStream()));
             String line;
             StringBuilder response = new StringBuilder();
             while ((line = reader.readLine()) != null) {
                 response.append(line);
             }
             reader.close();
-            connectionService.createConecction().disconnect();
+            connectionService.createConnectionResponse(name).disconnect();
             return response.toString();
         } catch (Exception e) {
             e.printStackTrace();

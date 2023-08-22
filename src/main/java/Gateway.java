@@ -52,13 +52,13 @@ public class Gateway {
             System.out.println("Server started on port " + SERVER_PORT);
         }
 
-    private static void addCORSContext(HttpServer server, String path, HttpHandler handler) {
-        HttpContext context = server.createContext(path, exchange -> {
-            // Configurar cabeceras CORS
-            exchange.getResponseHeaders().add("Access-Control-Allow-Origin", "*");
-            exchange.getResponseHeaders().add("Access-Control-Allow-Methods", "GET, OPTIONS");
-            exchange.getResponseHeaders().add("Access-Control-Allow-Headers", "Content-Type");
-            handler.handle(exchange);
-        });
-    }
+        private static void addCORSContext(HttpServer server, String path, HttpHandler handler) {
+            HttpContext context = server.createContext(path, exchange -> {
+                // Configurar cabeceras CORS
+                exchange.getResponseHeaders().add("Access-Control-Allow-Origin", "*");
+                exchange.getResponseHeaders().add("Access-Control-Allow-Methods", "GET, OPTIONS");
+                exchange.getResponseHeaders().add("Access-Control-Allow-Headers", "Content-Type");
+                handler.handle(exchange);
+            });
+        }
 }
