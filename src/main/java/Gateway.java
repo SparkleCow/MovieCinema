@@ -12,7 +12,7 @@ import java.util.concurrent.Executors;
 
 public class Gateway {
 
-        private final static int SERVER_PORT = 8080;
+        private final static int SERVER_PORT = 8070;
 
         // Iniciando el servidor
         public static void main(String[] args) throws IOException {
